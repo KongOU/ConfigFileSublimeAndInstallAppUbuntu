@@ -1,0 +1,19 @@
+[color]
+	ui = true
+	branch = auto
+	diff = auto
+	status = auto
+[user]
+	name = kongou
+	email = oukong84@gmail.com
+[alias]
+	co = checkout
+	com = commit -am
+	c = clone
+	b = branch
+	s = status
+	p = push
+[push]
+	default = matching
+[core]
+	editor = subl -w
