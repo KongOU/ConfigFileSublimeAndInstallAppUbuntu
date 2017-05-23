@@ -28,10 +28,6 @@ sudo apt-add-repository ppa:jon-severinsson/ffmpeg
 sudo apt-add-repository ppa:ffmulticonverter/stable
 echo "............DONE.........."
 
-echo "-----add Repository sqlitebrowser"
-sudo apt-add-repository ppa:linuxgndu/sqlitebrowser
-echo "............DONE.........."
-
 echo "-----add Repository xbmc-----"
 sudo add-apt-repository ppa:team-xbmc/ppa
 echo "............DONE.........."
@@ -48,12 +44,50 @@ echo "-----add Repository unetbootin-----"
 sudo add-apt-repository ppa:gezakovacs/ppa
 echo "............DONE.........."
 
+echo "-----add Repository Atom-----"
+sudo add-apt-repository ppa:webupd8team/atom
+echo "............DONE.........."
+
+echo "-----add Repository FileZilla-----"
+sudo add-apt-repository ppa:n-muench/programs-ppa
+
+echo "-----add Repository wireshark-----"
+sudo add-apt-repository ppa:wireshark-dev/stable
+
+
 echo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 echo ++++++++++++++++++++++++Update Link++++++++++++++++++++++++++
 echo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 echo "-----apt-get update-----"
 sudo apt-get update
+echo "............DONE.........."
+
+sudo add-apt-repository ppa:numix/ppa
+sudo apt-get update && sudo apt-get install numix-gtk-theme
+sudo apt-get install numix-icon-theme-circle
+
+sudo add-apt-repository ppa:papirus/papirus
+sudo add-apt-repository ppa:noobslab/themes
+sudo apt-get update
+sudo apt-get install papirus-icon-theme
+
+sudo apt install dark-aurora
+
+
+# check update zsh
+upgrade_oh_my_zsh
+
+echo "-----Install Atom-----"
+sudo apt-get install atom
+echo "............DONE.........."
+
+sudo apt-get install filezilla
+
+curl -L https://www.npmjs.com/install.sh | sh
+
+echo "-----Install heroku-----"
+wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 echo "............DONE.........."
 
 echo "-----Install qbittorrenct-----"
@@ -67,6 +101,9 @@ echo "............DONE.........."
 echo "-----Install DB Browser for SQLite-----"
 sudo apt-get install sqlitebrowser
 echo "............DONE.........."
+
+sudo apt-get install pgadmin3
+sudo apt-get install imagemagick -y
 
 echo "-----Install Ip Address Calculator-----"
 sudo apt-get install gip
@@ -146,10 +183,6 @@ echo "............DONE.........."
 
 echo "-----Install Firewal-----"
 sudo apt-get install gufw
-echo "............DONE.........."
-
-echo "-----Install qBittorrent-----"
-sudo apt-get install qbittorrent
 echo "............DONE.........."
 
 echo "-----Install Compress-----"
